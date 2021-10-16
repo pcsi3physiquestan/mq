@@ -1,0 +1,502 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dualité onde-corpuscule &#8212; Mécanique quantique</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <link rel="canonical" href="https://pcsi3physiquestan.github.io/mq/notebook/dualite.html" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Fonction d’onde" href="fonction_onde.html" />
+    <link rel="prev" title="Mécanique quantique" href="../mq.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      
+      <h1 class="site-logo" id="site-title">Mécanique quantique</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../mq.html">
+   Mécanique quantique
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Dualité onde-corpuscule
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="fonction_onde.html">
+   Fonction d’onde
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        <a class="dropdown-buttons"
+            href="../_sources/notebook/dualite.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/notebook/dualite.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/notebook/dualite.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ondes-et-corpuscules-en-mecanique-classique">
+   Ondes et corpuscules en mécanique classique
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#experiences-importantes">
+   Expériences importantes
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#effet-photoelectrique">
+     Effet photoélectrique
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#diffraction-et-interferences-de-la-matiere">
+     Diffraction et interférences de la matière
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#la-dualite-onde-corpuscule">
+   La dualité onde-corpuscule
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#interferences-electrons-a-electrons">
+     Interférences électrons à électrons.
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#criteres-quantiques">
+     Critères quantiques
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#utilisation-du-critere-quantique">
+     Utilisation du critère quantique
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#travaux-diriges">
+   Travaux dirigés
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ordres-de-grandeur">
+     Ordres de grandeur
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pression-de-radiation">
+     Pression de radiation
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="dualite-onde-corpuscule">
+<h1>Dualité onde-corpuscule<a class="headerlink" href="#dualite-onde-corpuscule" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="ondes-et-corpuscules-en-mecanique-classique">
+<h2>Ondes et corpuscules en mécanique classique<a class="headerlink" href="#ondes-et-corpuscules-en-mecanique-classique" title="Permalink to this headline">¶</a></h2>
+<div class="attention admonition">
+<p class="admonition-title">Exercice</p>
+<p>On se propose ici de faire rapidement un bilan sur les concepts d’ondes et de corpuscule en mécanique classique.</p>
+<ul class="simple">
+<li><p>Rappeler brièvement les propriétés physiques qu’on associe à un corpuscule.</p></li>
+<li><p>Rappeler brièvement les propriétés physiques qu’on associe à une onde.</p></li>
+<li><p>Classer les objets physiques ci-après suivant qu’ils soient des corpuscules ou des ondes <strong>dans la théorie classique.</strong></p>
+<ul>
+<li><p>Electrons</p></li>
+<li><p>Atomes</p></li>
+<li><p>Lumière</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="attention admonition">
+<p class="admonition-title">Fondamental : A retenir…</p>
+<p>On retiendra qu’en mécanique classique, les objets physiques sont soit des corpuscules, soit des ondes.</p>
+<p>Attention, cela n’empêche pas l’interaction entre les deux types d’objets. Ainsi, la théorie classique prévoit l’interaction entre la matière et la lumière</p>
+</div>
+</div>
+<div class="section" id="experiences-importantes">
+<h2>Expériences importantes<a class="headerlink" href="#experiences-importantes" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="effet-photoelectrique">
+<h3>Effet photoélectrique<a class="headerlink" href="#effet-photoelectrique" title="Permalink to this headline">¶</a></h3>
+<p>Observer la vidéo suivante  appelée “Effet photoélectrique - Présentation” dans la partie mécanique quantique.</p>
+<p><strong>Effet photoélectrique - Présentation.</strong></p>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<div class="output text_html"><video src="https://github.com/pcsi3physiquestan/videos_physique/blob/main/photoelectrique_presentation-converted.mp4?raw=true" controls  width="640" >
+      Your browser does not support the <code>video</code> element.
+    </video></div></div>
+</div>
+<div class="attention admonition">
+<p class="admonition-title">Exercice</p>
+<ol class="simple">
+<li><p>Pourquoi les électrons ne peut aller sans éclairage de l’armature négative vers l’armature positive ? Traduire cela en traçant <strong>l’allure</strong>  de l’énergie potentielle des électrons d’une armature à l’autre .</p></li>
+<li><p>Que faut-il simplement pour que les électrons franchissent la barrière de potentiel mise en évidence à la question précédente ? Comment est-ce réalisé ici ? Expliquer ainsi ce qu’est l’effet photoélectrique .</p></li>
+<li><p>Du point de vue classique (ondulatoire) de la lumière, peut-on expliquer l’effet photoélectrique présenté dans la vidéo de présentation.</p>
+<ol class="simple">
+<li><p>Regarder maintenant les deux vidéos suivantes appelées “Effet photoélectrique - Effet de seuil” et “Effet photoélectrique - Effet de seuil et intensité”. Expliquer pourquoi de telles observations sont contradictoires avec la vision classique de la lumière .</p></li>
+<li><p>Dans la vision quantique, la lumière est <strong>aussi</strong>  composée corpusculaire, c’est à dire composée de quantas de lumière appelés photons dont l’énergie dépend de la fréquence <span class="math notranslate nohighlight">\(\nu\)</span> du rayonnement : <span class="math notranslate nohighlight">\(E_{photon} = h \nu\)</span> (relation de Planck-Einstein) où h est la constante dite de Planck (<span class="math notranslate nohighlight">\(h = 6,63 \times 10^{-34} \rm{J.s}\)</span>. Interprêter l’effet photoélectrique grâce à la notion de photon .</p></li>
+<li><p>Expliquer pourquoi cette vision corpusculaire permet d’expliquer l’existence d’un effet de seuil.</p></li>
+</ol>
+</li>
+<li><p>On donne le potentiel d’extraction du Sodium, c’est-à-dire l’énergie minimale nécessaire pour libérer des électrons de l’armature. <span class="math notranslate nohighlight">\(W_S = 2.5 eV\)</span>. Comparer la fréquence seuil des photons associées avec celle observée dans la vidéo “Effet photoélectrique - Influence du matériau”. A l’inverse, estimer le potentiel d’extraction du Zinc et du Calcium.</p></li>
+</ol>
+</div>
+<p><strong>Effet photoélectrique - Effet de seuil.</strong></p>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<div class="output text_html"><video src="https://github.com/pcsi3physiquestan/videos_physique/blob/main/photoelectrique_seuil-converted.mp4?raw=true" controls  width="640" >
+      Your browser does not support the <code>video</code> element.
+    </video></div></div>
+</div>
+<p><strong>Effet photoélectrique - Effet de seuil et intensité.</strong></p>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<div class="output text_html"><video src="https://github.com/pcsi3physiquestan/videos_physique/blob/main/photoelectrique_intensite-converted.mp4?raw=true" controls  width="640" >
+      Your browser does not support the <code>video</code> element.
+    </video></div></div>
+</div>
+<p><strong>Effet photoélectrique - Influence du matériau.</strong></p>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<div class="output text_html"><video src="https://github.com/pcsi3physiquestan/videos_physique/blob/main/photoelectrique_materiau-converted.mp4?raw=true" controls  width="640" >
+      Your browser does not support the <code>video</code> element.
+    </video></div></div>
+</div>
+<div class="attention admonition">
+<p class="admonition-title">Fondamental : Le photon</p>
+<p>On retiendra que le modèle corpusculaire de la lumière décrit la décrit comme un ensemble de “quantas de lumière” appelée photons. Ces derniers ont les caractéristiques suivantes :</p>
+<ul class="simple">
+<li><p>Leur énergie est (relation de Planck-Einstein) : <span class="math notranslate nohighlight">\(E = h \nu\)</span> où h est la constante de Planck et <span class="math notranslate nohighlight">\(\nu\)</span> la fréquence du rayonnement .</p></li>
+<li><p>Leur charge électrique est nulle* Leur masse est nulle* Leur vitesse est toujours la vitesse de la lumière : ce sont des particules relativistes .</p></li>
+<li><p>Leur quantité de mouvement est <span class="math notranslate nohighlight">\(\overrightarrow{p} = \frac{h}{\lambda}\overrightarrow{u} = \hbar \overrightarrow{k}\)</span> où <span class="math notranslate nohighlight">\(\hbar = \frac{h}{2 \pi}\)</span>, <span class="math notranslate nohighlight">\(\overrightarrow{u}\)</span> est un vecteur unitaire dans la direction et le sens de propagation de la lumière et <span class="math notranslate nohighlight">\(\overrightarrow{k} = \frac{2\pi}{\lambda} \overrightarrow{u}\)</span>.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="diffraction-et-interferences-de-la-matiere">
+<h3>Diffraction et interférences de la matière<a class="headerlink" href="#diffraction-et-interferences-de-la-matiere" title="Permalink to this headline">¶</a></h3>
+<div class="attention admonition">
+<p class="admonition-title">Exercice</p>
+<p>En 1927 Thomson de son côté et Davisson et Gerner du leur réalisent un expérience de diffraction d’un faisceau d’électrons par une fente fine ou un cristal. Depuis, des expériences de diffraction pour des atomes et molécules ont été réalisées.</p>
+<p>Depuis 1989, on a aussi réalisé des expériences d’interférences de matière (électron 1989, Hélium 1991, fullerènes 1999). Il s’agit de la ” classique ” expérience des fentes d’Young. Notons néanmoins que sa réalisation pratique pour de la matière est plus complexe que pour la lumière.</p>
+<ol class="simple">
+<li><p>Si l’on considère que les électrons sont uniquement des corpuscules (vision classique), expliquez pourquoi on ne peut obtenir de figure d’interférences (Remarque: ces observations expliquent aussi pourquoi le modèle purement corpusculaire de la lumière n’est pas valable) .</p></li>
+<li><p>Dans leur expérience, Davisson et Gerner bombardèrent du nickel (paramètre de maille <span class="math notranslate nohighlight">\(a = 0.215 nm\)</span>) avec des électrons. La formule de Bragg permet de relier l’angle de diffraction aux paramètres de l’expérience: <span class="math notranslate nohighlight">\(2a \sin \theta = \lambda\)</span>. Ils mesurèrent un angle de <span class="math notranslate nohighlight">\(50 ^{\circ}\)</span>. Estimer ainsi la longueur d’onde des électrons puis leur énergie .</p></li>
+<li><p>En réalité, l’énergie des électrons était de 54eV. Expliquer les causes possibles de cet écart.</p></li>
+</ol>
+</div>
+<div class="attention admonition">
+<p class="admonition-title">Fondamental : Dualité onde-corpuscule de la matière.</p>
+<p>On retiendra que d’un point de vue quantique, on peut associer un caractère corpusculaire associé à une énergie E et une quantité de mouvement <span class="math notranslate nohighlight">\(\overrightarrow{p}\)</span> ET un caractère ondulatoire associé à une longueur d’onde <span class="math notranslate nohighlight">\(\lambda\)</span> (ou de vecteur d’onde ) et une fréquence <span class="math notranslate nohighlight">\(f\)</span> (ou une pulsation <span class="math notranslate nohighlight">\(\omega\)</span>). Les deux aspects de la particule sont reliées par la relation de de Broglie:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-02d505a3-0f66-4a06-a63f-2ad65a8486ac">
+<span class="eqno">(1)<a class="headerlink" href="#equation-02d505a3-0f66-4a06-a63f-2ad65a8486ac" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+\overrightarrow{p} = \hbar \overrightarrow{k} = \frac{h}{\lambda}\overrightarrow{u}
+\end{equation}\]</div>
+<p>où <span class="math notranslate nohighlight">\(\overrightarrow{u}\)</span> est la direction de propagation de la lumière.</p>
+</div>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Remarque : Longueur d’onde et masse<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">Dans le cas de particules matérielles, la quantité de mouvement s’écrit <span class="math notranslate nohighlight">\(\overrightarrow{p} = m \overrightarrow{v}\)</span> donc plus la masse est grande, plus la longueur d’onde est faible. Comme on le verra avec les critères quantiques, cela rejoint l’idée que plus le système est gros, moins le traitement quantique est nécessaire.</p>
+</div>
+</details></div>
+</div>
+<div class="section" id="la-dualite-onde-corpuscule">
+<h2>La dualité onde-corpuscule<a class="headerlink" href="#la-dualite-onde-corpuscule" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="interferences-electrons-a-electrons">
+<h3>Interférences électrons à électrons.<a class="headerlink" href="#interferences-electrons-a-electrons" title="Permalink to this headline">¶</a></h3>
+<div class="attention admonition">
+<p class="admonition-title">Exercice</p>
+<p>Observer la vidéo suivante sur une expérience d’interférences électrons par électrons expliquer l’aspect dual de l’interprétation ondes-corpuscules de la matière.</p>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<div class="output text_html"><video src="https://github.com/pcsi3physiquestan/videos_physique/blob/main/interference_electron.mp4?raw=true" controls  width="640" >
+      Your browser does not support the <code>video</code> element.
+    </video></div></div>
+</div>
+</div>
+<div class="section" id="criteres-quantiques">
+<h3>Critères quantiques<a class="headerlink" href="#criteres-quantiques" title="Permalink to this headline">¶</a></h3>
+<p>Nous avons évoqué le parallèle entre la mécanique classique-quantique et l’optique géométrique-ondulatoire. Ce parallèle est d’autant plus important qu’il va nous permettre de situer si les effets quantiques doivent nécessairement être pris en compte ou non. Rappelons par exemple que la loi de Dulong-Petit (approche classique) est largement valable à température ambiante. Elle ne l’est plus à basse température. Cela signifie que l’approche quantique n’est pas nécessaire à température ambiante, elle le devient à basse température.</p>
+<div class="attention admonition">
+<p class="admonition-title">Fondamental : Crtière sur la longueur d’onde</p>
+<p>Par analogie avec l’approximation de l’optique géométrique, on peut considérer que l’approche de la mécanique classique reste valable tant que les dimensions du corps considéré sont grandes devant la longueur d’onde de de Broglie associé au système.</p>
+</div>
+<p>L’inconvénient du critère précédent est qu’il demande de comparer deux caractéristiques du corps. On peut chercher à se ramener à une comparaison avec une constante fondamentale (à l’image de la comparaison avec la célérité de la lumière pour décider d’un traitement relativiste). Ici, la constante fondamentale adaptée est <strong>la constante de Planck</strong>  <span class="math notranslate nohighlight">\(h\)</span>. En effet le critère sur la longueur d’onde peut se réécrire: <span class="math notranslate nohighlight">\(a &gt;&gt; \lambda = \frac{h}{p}\)</span> soit <span class="math notranslate nohighlight">\(ap &gt;&gt; h\)</span>.</p>
+<div class="attention admonition">
+<p class="admonition-title">Fondamental : Critère sur l’action</p>
+<p>Le traitement classique reste valable tant que l’action caractéristique <span class="math notranslate nohighlight">\(S\)</span> du système est grande devant la constante de Planck.</p>
+</div>
+</div>
+<div class="section" id="utilisation-du-critere-quantique">
+<h3>Utilisation du critère quantique<a class="headerlink" href="#utilisation-du-critere-quantique" title="Permalink to this headline">¶</a></h3>
+<div class="attention admonition">
+<p class="admonition-title">Exercice</p>
+<ol class="simple">
+<li><p>En utilisant le critère sur la longueur d’onde, expliquer pourquoi un homme qui marche ne nécessite pas un traitement quantique .</p></li>
+<li><p>En utilisant le critère sur l’action, justifier qu’une planète gravitant autour d’un Soleil ne nécessite pas un traitement quantique mais qu’un électron autour d’un noyau le nécessite.</p></li>
+</ol>
+</div>
+</div>
+</div>
+<div class="section" id="travaux-diriges">
+<h2>Travaux dirigés<a class="headerlink" href="#travaux-diriges" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="ordres-de-grandeur">
+<h3>Ordres de grandeur<a class="headerlink" href="#ordres-de-grandeur" title="Permalink to this headline">¶</a></h3>
+<div class="attention admonition">
+<p class="admonition-title">Exercice</p>
+<ol class="simple">
+<li><p>Estimer la quantité de photons reçus par seconde par une photo-cathode de surface <span class="math notranslate nohighlight">\(S = 1 \rm{cm^{2}}\)</span> exposée au rayonnement d’un lampe au sodium (<span class="math notranslate nohighlight">\(\lambda = 589 \rm{nm}\)</span>) ponctuelle émettant avec une puissance <span class="math notranslate nohighlight">\(P=15\rm{W}\)</span> à une distance <span class="math notranslate nohighlight">\(d=1\rm{m}\)</span> .</p></li>
+<li><p>Estimer la quantité de photons reçus par seconde par la pupille dilatée d’un humain regardant une étoile de rayon <span class="math notranslate nohighlight">\(R = 10^5 \rm{km}\)</span> émettant principalement dans le rouge comme un corps noir et située à une distance de 20 années lumières. On sait que:</p>
+<ul class="simple">
+<li><p>Pour un corps noir, la puissance rayonnée par unité de surface du corps noir <strong>à sa surface</strong> est <span class="math notranslate nohighlight">\(P_S = \sigma T^4\)</span> avec <span class="math notranslate nohighlight">\(\sigma = 5.7 \times 10^{-8} \rm{W.m^{-2}.K^{-4}}\)</span> est la constante de Stefan.</p></li>
+<li><p>La longueur d’onde correspondant au maximum d’émission est reliée à la température du corps noir par la loi de déplacement de Wien: <span class="math notranslate nohighlight">\(\lambda_{max} T = cste = 0.2898 \rm{K.cm}\)</span></p></li>
+</ul>
+</li>
+<li><p>Commenter la difficulté d’obtenir une éclairement “un photon par un photon”.</p></li>
+</ol>
+</div>
+</div>
+<div class="section" id="pression-de-radiation">
+<h3>Pression de radiation<a class="headerlink" href="#pression-de-radiation" title="Permalink to this headline">¶</a></h3>
+<div class="attention admonition">
+<p class="admonition-title">Exercice</p>
+<p>Soit un faisceau monochromatique de puissance surfacique <span class="math notranslate nohighlight">\(P_S\)</span> et de longueur d’onde <span class="math notranslate nohighlight">\(\lambda\)</span> se réfléchissant sur un miroir parfait avec un angle <span class="math notranslate nohighlight">\(\theta\)</span>. Par un bilan de quantité de mouvement sur les photons, déterminer la pression (appelée pression de radiation) exercée par le faisceau lumineux sur le miroir. On supposera le milieu environnant assimilable au vide.</p>
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./notebook"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="../mq.html" title="previous page">Mécanique quantique</a>
+    <a class='right-next' id="next-link" href="fonction_onde.html" title="next page">Fonction d’onde</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By C. Lacpatia<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>
