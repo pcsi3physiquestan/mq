@@ -198,8 +198,8 @@
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#fonction-d-onde-definition">
-     Fonction d’onde - Définition
+    <a class="reference internal nav-link" href="#definition">
+     Définition
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
@@ -213,8 +213,8 @@
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#fonction-d-onde-remarque">
-     Fonction d’onde - Remarque
+    <a class="reference internal nav-link" href="#remarques-en-ligne">
+     Remarques (en ligne)
     </a>
    </li>
   </ul>
@@ -225,13 +225,13 @@
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#quantification-principe">
-     Quantification - Principe
+    <a class="reference internal nav-link" href="#principe">
+     Principe
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#etude-du-puits-de-potentiel-infini">
-     Etude du puits de potentiel infini
+    <a class="reference internal nav-link" href="#methode-etude-du-puits-de-potentiel-infini">
+     Méthode - Etude du puits de potentiel infini
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
@@ -240,8 +240,8 @@
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#quantification-bilan">
-     Quantification - Bilan
+    <a class="reference internal nav-link" href="#bilan">
+     Bilan
     </a>
    </li>
   </ul>
@@ -252,8 +252,8 @@
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#inegalites-d-heisenberg-enonce">
-     Inégalités d’Heisenberg - Enoncé
+    <a class="reference internal nav-link" href="#enonce">
+     Enoncé
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
@@ -262,8 +262,8 @@
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#ordres-de-grandeur">
-     Ordres de grandeur
+    <a class="reference internal nav-link" href="#ordre-de-grandeur">
+     Ordre de grandeur
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
@@ -274,8 +274,8 @@
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#travaux-diriges">
-   Travaux dirigés
+  <a class="reference internal nav-link" href="#entrainement">
+   Entrainement
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
@@ -305,80 +305,85 @@
 <h1>Fonction d’onde<a class="headerlink" href="#fonction-d-onde" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="id1">
 <h2>Fonction d’onde<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="fonction-d-onde-definition">
-<h3>Fonction d’onde - Définition<a class="headerlink" href="#fonction-d-onde-definition" title="Permalink to this headline">¶</a></h3>
-<p>La description des interférences nécessite un traitement ondulatoire (quand même!). L’idée a donc été d’associer à chaque particule une fonction dont le comportement peut être associé à celui d’une onde: on y trouvera donc <strong>possiblement</strong>  un terme de propagation et une amplitude et donc les caractéristiques d’une onde. Mais comme on va le voir, on pourra aussi avoir une interprétation de concepts corupusculaires.</p>
+<div class="section" id="definition">
+<h3>Définition<a class="headerlink" href="#definition" title="Permalink to this headline">¶</a></h3>
+<div class="topic">
+<p class="topic-title">Introduction</p>
+<p>La description des interférences nécessite un traitement ondulatoire (quand même!). L’idée a donc été d’associer à chaque particule une fonction dont le comportement peut être associé à celui d’une onde: on y trouvera donc <strong>possiblement</strong>  un terme de propagation et une amplitude et donc les caractéristiques d’une onde. Mais comme on va le voir, on pourra aussi avoir une interprétation de concepts corpusculaires.</p>
+</div>
+<div class="sidebar">
+<p class="sidebar-title">Remarque</p>
+<p>Ceci constitue un énoncé remanié du premier postulat de la mécanique quantique (en réalité, dans le formalisme de la mécanique quantique, on utilise plus des fonctions mais plus généralement des vecteurs d’état). Précisons qu’il s’agit d’un postulat. Il précise que tout l’information est contenue dans la fonction d’onde (pas de variables cachées qu’on ne connaîtrait pas encore).</p>
+</div>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p><strong>Définition : Fonction d’onde</strong></p>
+<p><strong>Fonction d’onde</strong></p>
 <p>La connaissance de l’état d’un système donnée à un instant donné est entièrement contenu dans une fonction appelée fonction d’onde <span class="math notranslate nohighlight">\(\Psi(M,t)\)</span>. Cette fonction doit posséder les caractéristiques suivantes (entre autre):</p>
 <ul class="simple">
 <li><p>Elle est de carré sommable (sur <span class="math notranslate nohighlight">\(\mathbb{R}^3\)</span>, cf <a class="reference internal" href="#proba"><span class="std std-ref">suite</span></a>) .</p></li>
 <li><p>Elle est complexe par nature.</p></li>
 </ul>
 </div>
-<p>Ceci constitue un énoncé remanié du premier postulat de la mécanique quantique (en réalité, dans le formalisme de la mécanique quantique, on utilise plus des fonctions mais plus généralement des vecteurs d’état). Précisons qu’il s’agit d’un postulat. Il précise que tout l’information est contenue dans la fonction d’onde (pas de variables cachées qu’on ne connaîtrait pas encore).</p>
 </div>
 <div class="section" id="fonction-d-onde-probabilite">
 <span id="proba"></span><h3>Fonction d’onde - Probabilité<a class="headerlink" href="#fonction-d-onde-probabilite" title="Permalink to this headline">¶</a></h3>
 <p>Nous avons dit que la fonction d’onde définissait complètement les caractéristiques d’un système. Il convient maintenant de remonter à des grandeurs qu’on peut interprêter à notre échelle. Il ne s’agit pas ici de présenter complètement la théorie quantique (qui nécessite notamment une bonne connaissance d’algèbre linéaire) mais de présenter un point particulier: la notion de probabilité de présence.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p><strong>Fondamental : Probabilité de présence</strong></p>
+<p><strong>Probabilité de présence</strong></p>
 <p>La probabilité dP de détecter une particule dans un petit volume <span class="math notranslate nohighlight">\(\delta \tau\)</span> autour du point M à un instant t est donné par:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-491e13a7-2483-458f-81c6-96153810c85c">
-<span class="eqno">(2)<a class="headerlink" href="#equation-491e13a7-2483-458f-81c6-96153810c85c" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="math notranslate nohighlight">
+\[
 dP = A \vert \Psi^2(M,t) \vert d \tau
-\end{equation}\]</div>
+\]</div>
 <p>où <span class="math notranslate nohighlight">\(\vert \Psi^2(M,t) \vert\)</span> est le module au carré de la fonction d’onde. <span class="math notranslate nohighlight">\(\Psi^2(M,t)\)</span> est appelée densité de probabilité de présence.</p>
 <p>A est un facteur de normalisation de sorte que la probabilité totale sur tout l’espace soit 1.</p>
 </div>
-<details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-Remarque<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<p class="card-text"><strong>Remarques générales</strong></p>
+<div class="topic">
+<p class="topic-title">Remarques générales</p>
 <ul class="simple">
-<li><p class="card-text">il s’agit d’une probabilité de présence. Ce qui signifie que temps qu’on a pas réalisé une observation (humaine, appareil… ), on ne sait pas où se trouve la particule. Ce concept est fondamental en mécanique quantique, on n’a accès a priori qu’à des probabilités de présence. Comme on le précisera par la suite, l’observation implique la modification de cette fonction d’onde, autrement dit ” perturbe le système ” .</p></li>
-<li><p class="card-text">Cette notion a souvent fait penser que le déterminisme n’était plus de mise. Il faut prendre cette idée avec beaucoup de réserves. En effet, si les notions classiques de trajectoire, de position ne sont pas connues avec certitude à chaque instant si l’on ne fait pas la mesure, l’évolution de la fonction est elle parfaitement décrite par la mécanique quantique (équation de Schrödinger): on retrouve alors la notion de déterminisme. Le problème est qu’il n’est plus accessible, avec une précision <strong>théoriquement</strong>  infinie à nos observations. On notera notamment que les mesures expérimentales les plus précises sont associées à la mécanique quantique .</p></li>
-<li><p class="card-text">La probabilité d’observer la particule dans tout l’espace est nécessairement de 1. C’est pourquoi il faut que la somme du moduel au carré sur tout l’espace soit finie (fonction de carré sommable) .</p></li>
-<li><p class="card-text">Une différence fondamentale est l’absence de valeur moyenne. Il s’agit d’une probabilité de présence à un instant t. Dans le cas d’onde classique, il s’agirait de l’énergie reçue graduellement sur une ” période “.</p></li>
+<li><p>il s’agit d’une probabilité de présence. Ce qui signifie que temps qu’on a pas réalisé une observation (humaine, appareil… ), on ne sait pas où se trouve la particule. Ce concept est fondamental en mécanique quantique, on n’a accès a priori qu’à des probabilités de présence. Comme on le précisera par la suite, l’observation implique la modification de cette fonction d’onde, autrement dit ” perturbe le système ” .</p></li>
+<li><p>Cette notion a souvent fait penser que le déterminisme n’était plus de mise. Il faut prendre cette idée avec beaucoup de réserves. En effet, si les notions classiques de trajectoire, de position ne sont pas connues avec certitude à chaque instant si l’on ne fait pas la mesure, l’évolution de la fonction est elle parfaitement décrite par la mécanique quantique (équation de Schrödinger): on retrouve alors la notion de déterminisme. Le problème est qu’il n’est plus accessible, avec une précision <strong>théoriquement</strong>  infinie à nos observations. On notera notamment que les mesures expérimentales les plus précises sont associées à la mécanique quantique .</p></li>
+<li><p>La probabilité d’observer la particule dans tout l’espace est nécessairement de 1. C’est pourquoi il faut que la somme du moduel au carré sur tout l’espace soit finie (fonction de carré sommable) .</p></li>
+<li><p>Une différence fondamentale est l’absence de valeur moyenne. Il s’agit d’une probabilité de présence à un instant t. Dans le cas d’onde classique, il s’agirait de l’énergie reçue graduellement sur une ” période “.</p></li>
 </ul>
 </div>
-</details></div>
+</div>
 <div class="section" id="interpretation-de-l-experience-d-interference">
 <h3>Interprétation de l’expérience d’interférence<a class="headerlink" href="#interpretation-de-l-experience-d-interference" title="Permalink to this headline">¶</a></h3>
 <div class="attention admonition">
-<p class="admonition-title">Exercice</p>
+<p class="admonition-title">Exemple</p>
 <p>On considère le cas des interférences au moyen d’un dispositif des trous d’Young pour des électrons.</p>
 <p>Sachant qu’on peut alors appliquer un “pseudo” principe de superposition à la fonction d’onde associé à l’électron, expliquer, calcul à l’appui, pourquoi cette dernière est cohérente avec le principe d’une répartition des électrons n’étant pas la somme des faisceaux issus des deux fentes.</p>
 </div>
 </div>
-<div class="section" id="fonction-d-onde-remarque">
-<h3>Fonction d’onde - Remarque<a class="headerlink" href="#fonction-d-onde-remarque" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="remarques-en-ligne">
+<h3>Remarques (en ligne)<a class="headerlink" href="#remarques-en-ligne" title="Permalink to this headline">¶</a></h3>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
 <p>C’est important de ne pas confondre la fonction d’onde associé à une particule (ou plus généralement à un système) et l’amplitude complexe d’une onde classique.</p>
 </div>
-<p><strong>Analogie mathématique</strong><br />
-Rappelons d’abord les caractéristiques générale d’une onde:</p>
+<div class="topic">
+<p class="topic-title">Analogie mathématique</p>
+<p>Rappelons d’abord les caractéristiques générale d’une onde:</p>
 <ul class="simple">
 <li><p>Elle peut se caractériser par une direction (instantanée) et une vitesse (instantanée) de propagation. <strong>Pour simplifier, on pourra supposer une propagation rectiligne uniforme.</strong> * L’amplitude de l’onde peut se décomposer en somme d’ondes sinusoïdales (décomposition en série de Fourier) auxquelles on peut associer une fréquence <span class="math notranslate nohighlight">\(f\)</span>, une longueur d’onde <span class="math notranslate nohighlight">\(\lambda\)</span> ou directement un vecteur d’onde <span class="math notranslate nohighlight">\(\overrightarrow{k} = \frac{2 \pi}{\lambda} \overrightarrow{u}\)</span> où <span class="math notranslate nohighlight">\(\overrightarrow{u}\)</span> est la direction de propagation .</p></li>
 <li><p>Pour représenter une onde sinusoïdale, on peut utiliser sa représentation complexe <span class="math notranslate nohighlight">\(A(M,t) = A(M) e^{j (\omega t - \overrightarrow{k} \cdot \overrightarrow{OM})}\)</span>. Cette représentation complexe reste une représentation mathématique permettant des calculs plus aisés (notamment pour les interférence) mais le contenu physique n’est contenu QUE dans la partie réelle de cette représentation .</p></li>
 <li><p>La superposition des ondes ne correspond pas nécessairement à un phénomène de propagation: citons en exemple les ondes stationnaires. On peut les décomposer en plusieurs ondes progressives mais la somme donne un effet où il n’y a plus de propagation de l’énergie.</p></li>
 </ul>
-<p><strong>Différences</strong><br />
-Ces différents points peuvent être repris pour étudier mathématiquement la fonction d’onde: c’est d’ailleurs grâce à ces analogies qu’on peut décrire le caractère ondulatoire de la matière mais plusieurs nuances doivent être apportés:</p>
+</div>
+<div class="topic">
+<p class="topic-title">Différences</p>
+<p>Ces différents points peuvent être repris pour étudier mathématiquement la fonction d’onde: c’est d’ailleurs grâce à ces analogies qu’on peut décrire le caractère ondulatoire de la matière mais plusieurs nuances doivent être apportés:</p>
 <ul class="simple">
 <li><p>Dans les cas le plus souvent étudiés, il n’y a pas de phénomènes de propagation, on est donc plus souvent sur des types d’ondes stationnaires (cf le cas du corps noir) .</p></li>
 <li><p>La fonction d’onde est cette fois PAR DEFINITION complexe: cela signifie qu’on ne peut se “débarrasser de la partie imaginaire” en passant au réel comme d’un artifice mathématique. Ceci est fondamental est sera précisé en deuxième année (l’équation de Schrödinger est complexe) .</p></li>
 <li><p>Si l’on peut toujours se ramener à décomposer un signal en série de Fourier, il faut noter qu’on ne peut associer une fonction purement sinusoïdale à une fonction d’onde: la probabilité de présence totale serait alors infinie.</p></li>
 </ul>
-<p><strong>Aspects corpusculaires importants</strong><br />
-On pourrait croire à travers l’analogie entre onde classique et fonction d’onde que toute la matière n’est qu’onde. Il est important de comprendre que ce n’est pas le cas. En effet, si l’on regarde de plus près la fonction d’onde, on voit plusieurs points importants:</p>
+</div>
+<div class="topic">
+<p class="topic-title">Aspects corpusculaires importants</p>
+<p>On pourrait croire à travers l’analogie entre onde classique et fonction d’onde que toute la matière n’est qu’onde. Il est important de comprendre que ce n’est pas le cas. En effet, si l’on regarde de plus près la fonction d’onde, on voit plusieurs points importants:</p>
 <ul class="simple">
 <li><p>Rappelons déjà son caractère fondamentalement complexe* La fonction d’onde contient toutes les informations. Elle doit donc pouvoir décrire les expériences où l’interprétation est de nature corpusculaire. Comment décrire la vitesse de la particule. Il apparaît que cette vitesse n’est PAS la célérité de l’onde dans les cas généraux. On voit donc la limite de cette conception .</p></li>
 <li><p>La notion d’onde classique suppose un phénomène physique étendu dans l’espace. On peut ainsi observer, dans l’approche classique l’influence d’une onde en plusieurs positions au même instant. Ce n’est PAS le cas pour la fonction d’onde. En effet, la détection d’un phénomène associé au système localise le <strong>système</strong>  à l’endroit donné. Il y alors un “repli” “’’ instantanée de la fonction d’onde au point où l’on a détecté la particule (on parle de <strong>réduction du paquet d’onde</strong> ): on ne peut détecter la particule au même instant ailleurs. C’est d’ailleurs là que l’aspect corpusculaire apparaît.</p></li>
@@ -387,23 +392,24 @@ On pourrait croire à travers l’analogie entre onde classique et fonction d’
 <p>On verra que ce concept s’exprime de manière quantitative grâce aux inégalités d’Heisenberg.</p>
 </div>
 </div>
+</div>
 <div class="section" id="quantification-des-etats-lies">
 <h2>Quantification des états liés<a class="headerlink" href="#quantification-des-etats-lies" title="Permalink to this headline">¶</a></h2>
 <p><em>La quantification des états liés est fondamentale en mécanique quantique. Elle est une conséquence directement du caractère ondulatoire de la matière. Pour simplifier l’explication ce phénomène nous allons nous ramener à traiter la fonction d’onde comme une onde classique. Il faut néanmoins garder en mémoire toutes les précautions mise en évidence ci-dessus. C’est un point important qu’il faut comprendre associé à la notion de complémentarité. La description de tel ou tel phénomène quantique passe par le choix d’une représentation ondulatoire ou corpusculaire. Souvent dans ce choix, on ” oublie ” momentanément l’autre aspect qui existe bel et bien.</em></p>
-<div class="section" id="quantification-principe">
-<h3>Quantification - Principe<a class="headerlink" href="#quantification-principe" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="principe">
+<h3>Principe<a class="headerlink" href="#principe" title="Permalink to this headline">¶</a></h3>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p><strong>Fondamental : Le phénomène de quantification</strong></p>
+<p><strong>Le phénomène de quantification</strong></p>
 <p>La quantification des états de la matière correspond au caractère quantifié des états accessible, c’est-à-dire que certaines caractéristiques (énergie, moment cinétique… ) ne peuvent prendre que des valeurs discrètes.</p>
 </div>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Exemple : Quantification des états des atomes</p>
+<div class="topic">
+<p class="topic-title">Exemple : Quantification des états des atomes</p>
 <p>Les expériences de spectroscopie ont montré que le spectre d’émission des atomes correspondent à des longueurs d’onde bien précises et discrètes. La relation de Planck-Einstein implique que l’énergie des photons émis et donc les écarts d’énergie entre les niveaux sont discrets: les états d’énergie d’un atome sont donc quantifiés. Ainsi les niveaux énergétiques de l’atome d’hydrogène sont données par: <span class="math notranslate nohighlight">\(E_n = -\frac{13.6}{n^2} \rm{eV}\)</span></p>
 </div>
 </div>
-<div class="section" id="etude-du-puits-de-potentiel-infini">
-<h3>Etude du puits de potentiel infini<a class="headerlink" href="#etude-du-puits-de-potentiel-infini" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="methode-etude-du-puits-de-potentiel-infini">
+<h3>Méthode - Etude du puits de potentiel infini<a class="headerlink" href="#methode-etude-du-puits-de-potentiel-infini" title="Permalink to this headline">¶</a></h3>
 <div class="attention admonition">
 <p class="admonition-title">Exercice</p>
 <p>Soit un système <span class="math notranslate nohighlight">\(\Sigma\)</span> (potentiellement un électron, un atome… ) On considère un puits de potentiel infini:</p>
@@ -416,10 +422,10 @@ E_p(x &lt; 0 OU x &gt; L) = \infty
 \end{align*}\]</div>
 <p>On admet que les zones où l’énergie potentielle est infinie impose une probabilité de présence nulle soit <span class="math notranslate nohighlight">\(\Psi(M,t) = 0\)</span>.</p>
 <p>On veut chercher ici les états stationnaires, c’est-à-dire les états dont la fonction d’onde s’écrit: <span class="math notranslate nohighlight">\(\Psi(x,t) = Psi_x(x) \times Psi_t(t)\)</span>. On admet que dans ces conditions, la fonction d’onde peut s’écrire:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-9f03d5fc-b455-43d5-994a-970527ca0379">
-<span class="eqno">(3)<a class="headerlink" href="#equation-9f03d5fc-b455-43d5-994a-970527ca0379" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="math notranslate nohighlight">
+\[
 \Psi(x,t) = e^{- \frac{i}{h} E t} \phi(x)
-\end{equation}\]</div>
+\]</div>
 <p>où <span class="math notranslate nohighlight">\(E\)</span> est l’énergie de l’état du système considéré et <span class="math notranslate nohighlight">\(\phi\)</span> est une fonction sinusoïdale <span class="math notranslate nohighlight">\(\phi(x) = A \sin (\frac{2 \pi}{\lambda} x + \alpha)\)</span>.</p>
 <ol class="simple">
 <li><p>Calculer la densité de probabilité de présence d’un état stationnaire si <span class="math notranslate nohighlight">\(\phi(x)\)</span> est réelle. Trouver une explication au terme “stationnaire” .</p></li>
@@ -431,7 +437,7 @@ E_p(x &lt; 0 OU x &gt; L) = \infty
 </div>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p><strong>Fondamental : A retenir</strong></p>
+<p><strong>A retenir</strong></p>
 <p>On retiendra:</p>
 <ul class="simple">
 <li><p>que les états stationnaires dans un puits de potentiel infini ont des énergies quantifiées .</p></li>
@@ -457,10 +463,10 @@ E_p(x &lt; 0 OU x &gt; L) = \infty
 \end{cases}
 \end{align*}\]</div>
 <p>On rappelle que la fonction d’onde des états stationnaires prend la forme:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-bf62f349-f14a-4aca-a8b2-ae9cd4373ac1">
-<span class="eqno">(4)<a class="headerlink" href="#equation-bf62f349-f14a-4aca-a8b2-ae9cd4373ac1" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="math notranslate nohighlight">
+\[
 \Psi(x,t) = e^{- \frac{i}{h} E t} \phi(x)
-\end{equation}\]</div>
+\]</div>
 <p>et que l’énergie <span class="math notranslate nohighlight">\(E\)</span> et la longueur d’onde <span class="math notranslate nohighlight">\(\lambda\)</span> sont quantifiés:</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
@@ -498,7 +504,7 @@ E_n &amp;= n^2 \frac{h^2}{8mL^2}
 </div>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p><strong>Fondamental : A retenir</strong></p>
+<p><strong>A retenir</strong></p>
 <p>On retiendra:</p>
 <ul class="simple">
 <li><p>que les états réels sont souvent des superpositions d’état stationnaire. On pourra par la suite mettre cela en lien avec le principe d’indétermination d’Heisenberg .</p></li>
@@ -506,48 +512,55 @@ E_n &amp;= n^2 \frac{h^2}{8mL^2}
 </ul>
 </div>
 </div>
-<div class="section" id="quantification-bilan">
-<h3>Quantification - Bilan<a class="headerlink" href="#quantification-bilan" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="bilan">
+<h3>Bilan<a class="headerlink" href="#bilan" title="Permalink to this headline">¶</a></h3>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p><strong>Fondamental : Généralisation (admise)</strong></p>
+<p><strong>Généralisation (admise)</strong></p>
 <p>Considérons un système <span class="math notranslate nohighlight">\(\Sigma\)</span> dont l’énergie potentielle est <span class="math notranslate nohighlight">\(E_p(x)\)</span>. On admet que lorsque des état liés peuvent exister, il s’établit alors une quantification des états liés: l’énergie de ces états ne peut prendre qu’une valeur discrète. L’exemple de puits carrés finis sera vus en seconde année (PC).</p>
 </div>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
 <p>Nous parlons ici uniquement des états liés. Les états de diffusion  n’impose pas de condition de quantification.</p>
 </div>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Exemple : Cas des atomes</p>
+<div class="topic">
+<p class="topic-title">Exemple : Cas des atomes</p>
 <p>Dans les atomes, les électrons sont soumis à un potentiel attracteur newtonien <span class="math notranslate nohighlight">\(E_p = -\frac{K}{r}\)</span> avec K&gt;0 (attraction du noyau). Il vient pour des états d’énergie tels que <span class="math notranslate nohighlight">\(E &lt; 0\)</span>, nous sommes dans des états liés: ce sont les états stables du noyau (une énergie plus forte revient à ioniser l’atome). La propriété précédente explique la quantification des atomes.</p>
 </div>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Exemple : Cas de l’oscillateur harmonique</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Exemple : Cas de l’oscillateur harmonique</strong></p>
 <p>L’oscillateur harmonique est un système soumis au potentiel:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-6dbf9e7c-87ab-4d59-beff-cce3b8374f19">
-<span class="eqno">(5)<a class="headerlink" href="#equation-6dbf9e7c-87ab-4d59-beff-cce3b8374f19" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="math notranslate nohighlight">
+\[
 E_p = \frac{1}{2} k x^2 = \frac{1}{2} m \omega_0^2 x^2
-\end{equation}\]</div>
+\]</div>
 <p>Tous les états possibles sont des états liées. Il vient que tous les états de l’oscillateur harmonique sont liés. On peut montrer (en utilisant l’équation de Schrödinger) que l’énergie des états liés est:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-0768fd6a-66fc-4cf2-b849-5548e458b180">
-<span class="eqno">(6)<a class="headerlink" href="#equation-0768fd6a-66fc-4cf2-b849-5548e458b180" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="math notranslate nohighlight">
+\[
 E_n = \hbar \omega_0 (n + \frac{1}{2})
-\end{equation}\]</div>
+\]</div>
 <p>On observe que l’état fondamental (de plus basse énergie) n’est PAS (comme pour le puits quantique) l’énergie nulle (qui correspondrait à un état d’équilibre). C’est un point fondamental qu’on pourra associer par la suite aux inégalités d’Heisenberg.</p>
 </div>
 </div>
 </div>
 <div class="section" id="inegalites-d-heisenberg">
 <h2>Inégalités d’Heisenberg<a class="headerlink" href="#inegalites-d-heisenberg" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="inegalites-d-heisenberg-enonce">
-<h3>Inégalités d’Heisenberg - Enoncé<a class="headerlink" href="#inegalites-d-heisenberg-enonce" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="enonce">
+<h3>Enoncé<a class="headerlink" href="#enonce" title="Permalink to this headline">¶</a></h3>
+<div class="margin sidebar">
+<p class="sidebar-title"></p>
+<p>Le principe d’incertitude relie position et quantitié de mouvement suivant un axe particulier. Il y a la même relation entre <span class="math notranslate nohighlight">\(y\)</span> et <span class="math notranslate nohighlight">\(p_y\)</span> par exemple. Par contre, il n’y a pas de contrainte entre l’indétermination sur <span class="math notranslate nohighlight">\(x\)</span> et sur <span class="math notranslate nohighlight">\(p_y\)</span>.</p>
+</div>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p><strong>Fondamental : Enoncé</strong></p>
+<p><strong>Enoncé</strong></p>
 <p>Considérons un système suivant une évolution unidimensionnelle suivant un axe x. On associe sa position à une grandeur <span class="math notranslate nohighlight">\(x\)</span> et sa quantité de mouvement àune grandeur <span class="math notranslate nohighlight">\(p_x\)</span>. L’indétermination <span class="math notranslate nohighlight">\(\Delta x\)</span> sur la position x et l’indétermination <span class="math notranslate nohighlight">\(\Delta p_x\)</span> sur l’impulsion <span class="math notranslate nohighlight">\(p_x\)</span> sont reliés par la relation:</p>
 <p>\begin{align*}
 \Delta p_x \Delta x \geq \frac{\hbar}{2}</p>
 </div>
+<div class="topic">
+<p class="topic-title">Interprétation</p>
 <p>Comment intérprêter ce principe? Remarquons trois points:</p>
 <ul class="simple">
 <li><p>le cas des états liés montrent que l’état fondamental ne correspond plus, comme en mécanique classique à un état d’équilibre au sens strict: un tel état n’est plus accessible .</p></li>
@@ -556,27 +569,18 @@ E_n = \hbar \omega_0 (n + \frac{1}{2})
 </ul>
 <p>Ces trois soulignent la différence fondamentale d’approche entre la mécanique classique et la mécanique quantique. Les deux derniers nous montrer que l’on doit renoncer au concept classique de trajectoire d’une particule car cela impliquerait de connaître l’état du système à chaque instant: <strong>on doit admettre que la connaissance d’au moins une grandeur vitesse ou position (voire les deux) est partiellement indéterminée.</strong>  Cela revient à dire que les aspects corpusculaire (associés à la position) et ondulatoire (associés à l’impulsion par la relation de de Broglie), s’ils sont complémentaire et indispensable ne peuvent être observés simultanément. Ce principe est mis en avant par les inégalités d’Heisenberg.</p>
 <p>Ce principe signifie qu’on ne rendre ce produit arbitrairement petit: il est impossible de définir à la fois la position et l’impulsion avec une précision arbitraire. Les inégalités d’Heisenberg concerne des grandeurs qu’on dit conjuguées (on ne définira pas précisément ce terme ici).</p>
-<details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-Remarque<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<p class="card-text">Le principe d’incertitude relie position et quantitié de mouvement suivant un axe particulier. Il y a la même relation entre <span class="math notranslate nohighlight">\(y\)</span> et <span class="math notranslate nohighlight">\(p_y\)</span> par exemple. Par contre, il n’y a pas de contrainte entre l’indétermination sur <span class="math notranslate nohighlight">\(x\)</span> et sur <span class="math notranslate nohighlight">\(p_y\)</span>.</p>
 </div>
-</details><div class="admonition attention">
-<p class="admonition-title">Attention</p>
-<p><strong>Indétermination et incertitude</strong></p>
+<div class="topic">
+<p class="topic-title">Indétermination et incertitude</p>
 <p>La notion d’indétermination est souvent rapprochée de la notion d’incertitude d’un point de vue expérimental (on parle d’ailleurs de principe d’incertitude et souvent dans nos estimations on assimilera l’indétermination à l’incertitude minimale possible) MAIS ATTENTION, ce n’est qu’une façon simplifiée de voir les choses car ce principe n’est pas simplement rattaché à l’expérience, il est beaucoup plus fondamental. D’une manière générale, il faut comprendre que la position comme la vitesse sont des observables reliées à la fonction d’onde (exemple: l’observation de la position est reliée la densité de probabilité). La fonction d’onde fluctue dans l’espace. On peut lui associer un écart-type qui quantifie ces fluctuations. Ces fluctuations sont intrinsèques au système et non reliées au principe de mesure.</p>
 </div>
-<div class="hint dropdown admonition">
-<p class="admonition-title">Compléments : Cas de l’énergie</p>
+<div class="topic">
+<p class="topic-title">Compléments : Cas de l’énergie</p>
 <p>De la même manière que impulsion et position sont conjuguées, l’énergie et le temps sont aussi soumis à une inégalité:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-2413adab-0735-4097-9218-e5a31b839c12">
-<span class="eqno">(7)<a class="headerlink" href="#equation-2413adab-0735-4097-9218-e5a31b839c12" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="math notranslate nohighlight">
+\[
 \Delta t \Delta E \geq \frac{\hbar}{2}
-\end{equation}\]</div>
+\]</div>
 <p>Cette inégalité est fondamental mais d’une tournure différente car le temps n’est pas soumis aux fluctuations quantiques et quantification. Ici <span class="math notranslate nohighlight">\(\Delta t\)</span> correspond un temps caractéristique de l’évolution notoire (d’un point de vue énergétique) du système. Elle est par exemple utilisée pour expliquer simplement la largeur de raie d’un atome.</p>
 </div>
 </div>
@@ -594,12 +598,12 @@ Remarque<div class="summary-down docutils">
 </div>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p><strong>Fondamental : A retenir</strong></p>
+<p><strong>A retenir</strong></p>
 <p>On retiendra que les inégalités d’Heisenberg permettent d’expliquer simplement plusieurs effets quantiques. Mais attention, <strong>il ne s’agit QUE d’estimation d’ordre de grandeur car ce ne sont pas de vrais calculs des indétermination.</strong></p>
 </div>
 </div>
-<div class="section" id="ordres-de-grandeur">
-<h3>Ordres de grandeur<a class="headerlink" href="#ordres-de-grandeur" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="ordre-de-grandeur">
+<h3>Ordre de grandeur<a class="headerlink" href="#ordre-de-grandeur" title="Permalink to this headline">¶</a></h3>
 <div class="attention admonition">
 <p class="admonition-title">Exercice</p>
 <p>Il est important de savoir estimer si les inégalités d’Heisenberg sont contraignantes ou non pour l’étude de tel ou tel système. Si elles sont contraignantes, cela signifie que la mécanique classique est sûrement mise en défaut.</p>
@@ -607,11 +611,6 @@ Remarque<div class="summary-down docutils">
 <li><p>Pour une balle de Tennis (<span class="math notranslate nohighlight">\(m = 60 \rm{g}\)</span>) frappée à <span class="math notranslate nohighlight">\(100 \rm{km.h^{-1}}\)</span>. Estimer l’indétermination minimale sur la position de la balle si l’on peut mesurer sa vitesse à <span class="math notranslate nohighlight">\(0.1 \rm{km.h^{-1}}\)</span>. Le principe d’indétermination a-il une influence a priori sur l’étude du mouvement d’une balle de Tennis?</p></li>
 <li><p>Pour un électron orbitant autour d’un atome estimer l’indétermination sur la position <span class="math notranslate nohighlight">\(\Delta x\)</span>. En déduire l’indétermination sur la vitesse <span class="math notranslate nohighlight">\(v_x\)</span>. Commenter.</p></li>
 </ol>
-</div>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p>__Fondamental : __</p>
-<p>L’effet du principe d’indétermination est quasi-négligeable à l’échelle macroscopique mais peuvent devenir extrêmement important à l’échelle microscopique.</p>
 </div>
 </div>
 <div class="section" id="contraintes-sur-l-energie-minimale">
@@ -623,10 +622,10 @@ Remarque<div class="summary-down docutils">
 <li><p>Généralités: On considère un système mécanique possédant une position d’équilibre stable, donc un minimum d’énergie potentielle. Si le système est dans cet état, que peut-on dire de l’indétermination sur la position? En déduire l’indétermination minimale sur la quantité de mouvement. Commenter.</p></li>
 </ol>
 <p>Cas de l’oscillateur harmonique. On reprendre le cas de l’oscillateur harmonique. On rappelle que les états stationnaires sont quantifiés et que:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-2b7527b9-15db-4ba6-a94c-91a921092adb">
-<span class="eqno">(8)<a class="headerlink" href="#equation-2b7527b9-15db-4ba6-a94c-91a921092adb" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="math notranslate nohighlight">
+\[
 E_n = \hbar \omega_0 (n + \frac{1}{2})
-\end{equation}\]</div>
+\]</div>
 <ol class="simple">
 <li><p>En considérant le mouvement d’un oscillateur d’un point de vue classique, justifier que l’énergie mécanique du système puisse s’écrire sous la forme: <span class="math notranslate nohighlight">\(E = \frac{p_{x,m}^2}{4m} + \frac{k x_m^2}{4}\)</span> où <span class="math notranslate nohighlight">\(p_m\)</span> et <span class="math notranslate nohighlight">\(x_m\)</span> sont respectivement les amplitudes d’oscillations des grandeurs respectives <span class="math notranslate nohighlight">\(p_x\)</span> et<span class="math notranslate nohighlight">\(x\)</span> .</p></li>
 <li><p>En considérant le mouvement de l’oscillateur, proposer une relation simple entre <span class="math notranslate nohighlight">\(p_{x,m}\)</span> et l’indétermination <span class="math notranslate nohighlight">\(\Delta p_x\)</span> et de même entre <span class="math notranslate nohighlight">\(x_m\)</span> et l’indétermination <span class="math notranslate nohighlight">\(\Delta x\)</span></p></li>
@@ -640,8 +639,8 @@ E_n = \hbar \omega_0 (n + \frac{1}{2})
 </div>
 </div>
 </div>
-<div class="section" id="travaux-diriges">
-<h2>Travaux dirigés<a class="headerlink" href="#travaux-diriges" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="entrainement">
+<h2>Entrainement<a class="headerlink" href="#entrainement" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="energie-minimale-d-un-atome">
 <h3>Energie minimale d’un atome<a class="headerlink" href="#energie-minimale-d-un-atome" title="Permalink to this headline">¶</a></h3>
 <div class="attention admonition">
