@@ -1,47 +1,60 @@
 
+
 <!DOCTYPE html>
 
-<html>
+
+<html lang="en" >
+
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fonction d’onde &#8212; Mécanique quantique</title>
-    
-  <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    
-  <link rel="stylesheet"
-    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+    <title>2. Fonction d’onde &#8212; Mécanique quantique</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
-    
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
+  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
@@ -51,57 +64,97 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'notebook/fonction_onde';</script>
     <link rel="canonical" href="https://pcsi3physiquestan.github.io/mq/notebook/fonction_onde.html" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="prev" title="Dualité onde-corpuscule" href="dualite.html" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="None">
-    
-
-    <!-- Google Analytics -->
-    
+    <link rel="prev" title="1. Dualité onde-corpuscule" href="dualite.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
-<!-- Checkboxes to toggle the left sidebar -->
-<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
-<label class="overlay overlay-navbar" for="__navigation">
-    <div class="visually-hidden">Toggle navigation sidebar</div>
-</label>
-<!-- Checkboxes to toggle the in-page toc -->
-<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
-<label class="overlay overlay-pagetoc" for="__page-toc">
-    <div class="visually-hidden">Toggle in-page Table of Contents</div>
-</label>
-<!-- Headers at the top -->
-<div class="announcement header-item noprint"></div>
-<div class="header header-item noprint"></div>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
 
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
     
-    <div class="container-fluid" id="banner"></div>
-
     
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
 
-    <div class="container-xl">
-      <div class="row">
-          
-<!-- Sidebar -->
-<div class="bd-sidebar noprint" id="site-navigation">
-    <div class="bd-sidebar__content">
-        <div class="bd-sidebar__top"><div class="navbar-brand-box">
-    <a class="navbar-brand text-wrap" href="../index.html">
-      
-      
-      
-      <h1 class="site-logo" id="site-title">Mécanique quantique</h1>
-      
-    </a>
-</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
-  <i class="icon fas fa-search"></i>
-  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
-    <div class="bd-toc-item active">
+<a class="navbar-brand logo" href="../mq.html">
+  
+  
+  
+  
+  
+    <p class="title logo__title">Mécanique quantique</p>
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
@@ -111,433 +164,205 @@ const thebe_selector_output = ".output, .cell_output"
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="dualite.html">
-   Dualité onde-corpuscule
-  </a>
- </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
-   Fonction d’onde
-  </a>
- </li>
+<li class="toctree-l1"><a class="reference internal" href="dualite.html">1. Dualité onde-corpuscule</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">2. Fonction d’onde</a></li>
 </ul>
 
     </div>
 </nav></div>
-        <div class="bd-sidebar__bottom">
-             <!-- To handle the deprecated key -->
-            
-            <div class="navbar_extra_footer">
-            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
-            </div>
-            
-        </div>
     </div>
-    <div id="rtd-footer-container"></div>
-</div>
-
-
-          
-
-
-          
-<!-- A tiny helper pixel to detect if we've scrolled -->
-<div class="sbt-scroll-pixel-helper"></div>
-<!-- Main content -->
-<div class="col py-0 content-container">
-    
-    <div class="header-article row sticky-top noprint">
-        
-
-
-
-<div class="col py-1 d-flex header-article-main">
-    <div class="header-article__left">
-        
-        <label for="__navigation"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="right"
-title="Toggle navigation"
->
   
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-bars"></i>
-  </span>
-
-</label>
-
-        
-    </div>
-    <div class="header-article__right">
-<div class="menu-dropdown menu-dropdown-launch-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Launch interactive content">
-      <i class="fas fa-rocket"></i>
-  </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/notebook/fonction_onde.md"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Launch on Binder"
->
   
-
-<span class="headerbtn__icon-container">
-  
-    <img src="../_static/images/logo_binder.svg">
-  </span>
-<span class="headerbtn__text-container">Binder</span>
-</a>
-
-      </li>
-      
-    </ul>
+  <div class="sidebar-primary-items__end sidebar-primary__section">
   </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/notebook/fonction_onde.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
 </div>
+
+
+
 
 <button onclick="toggleFullScreen()"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="bottom"
-title="Fullscreen mode"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
 >
   
 
-<span class="headerbtn__icon-container">
+<span class="btn__icon-container">
   <i class="fas fa-expand"></i>
   </span>
 
 </button>
 
-<div class="menu-dropdown menu-dropdown-download-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Download this page">
-      <i class="fas fa-download"></i>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="../_sources/notebook/fonction_onde.ipynb"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Download notebook file"
->
-  
+`);
+</script>
 
-<span class="headerbtn__icon-container">
-  <i class="fas fa-code"></i>
-  </span>
-<span class="headerbtn__text-container">.ipynb</span>
-</a>
-
-      </li>
-      
-      <li>
-        <a href="../_sources/notebook/fonction_onde.md"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Download source file"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file"></i>
-  </span>
-<span class="headerbtn__text-container">.md</span>
-</a>
-
-      </li>
-      
-      <li>
-        
-<button onclick="printPdf(this)"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="left"
-title="Print to PDF"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file-pdf"></i>
-  </span>
-<span class="headerbtn__text-container">.pdf</span>
-</button>
-
-      </li>
-      
-    </ul>
-  </div>
-</div>
-<label for="__page-toc"
-  class="headerbtn headerbtn-page-toc"
-  
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-list"></i>
-  </span>
-
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
 </label>
-
+</div></div>
+      
     </div>
+  
 </div>
-
-<!-- Table of contents -->
-<div class="col-md-3 bd-toc show noprint">
-    <div class="tocsection onthispage pt-5 pb-3">
-        <i class="fas fa-list"></i> Contents
-    </div>
-    <nav id="bd-toc-nav" aria-label="Page">
-        <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id1">
-   Fonction d’onde
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#definition">
-     Définition
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#fonction-d-onde-probabilite">
-     Fonction d’onde - Probabilité
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#interpretation-de-l-experience-d-interference">
-     Interprétation de l’expérience d’interférence
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#remarques-en-ligne">
-     Remarques (en ligne)
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#quantification-des-etats-lies">
-   Quantification des états liés
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#principe">
-     Principe
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#methode-etude-du-puits-de-potentiel-infini">
-     Méthode - Etude du puits de potentiel infini
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#etude-du-puits-de-potentiel-infini-approfondissement">
-     Etude du puits de potentiel infini - Approfondissement
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#bilan">
-     Bilan
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#inegalites-d-heisenberg">
-   Inégalités d’Heisenberg
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#enonce">
-     Enoncé
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#interpretation-de-la-diffraction">
-     Interprétation de la diffraction
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#ordre-de-grandeur">
-     Ordre de grandeur
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#contraintes-sur-l-energie-minimale">
-     Contraintes sur l’énergie minimale.
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#entrainement">
-   Entrainement
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#energie-minimale-d-un-atome">
-     Energie minimale d’un atome
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#etude-de-l-oscillateur-harmonique">
-     Etude de l’oscillateur harmonique
-    </a>
-   </li>
-  </ul>
- </li>
-</ul>
-
-    </nav>
 </div>
-    </div>
-    <div class="article row">
-        <div class="col pl-md-3 pl-lg-5 content-container">
-            <!-- Table of contents that is only displayed when printing the page -->
-            <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Fonction d’onde</h1>
-                <!-- Table of contents -->
-                <div id="print-main-content">
-                    <div id="jb-print-toc">
-                        
-                        <div>
-                            <h2> Contents </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id1">
-   Fonction d’onde
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#definition">
-     Définition
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#fonction-d-onde-probabilite">
-     Fonction d’onde - Probabilité
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#interpretation-de-l-experience-d-interference">
-     Interprétation de l’expérience d’interférence
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#remarques-en-ligne">
-     Remarques (en ligne)
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#quantification-des-etats-lies">
-   Quantification des états liés
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#principe">
-     Principe
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#methode-etude-du-puits-de-potentiel-infini">
-     Méthode - Etude du puits de potentiel infini
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#etude-du-puits-de-potentiel-infini-approfondissement">
-     Etude du puits de potentiel infini - Approfondissement
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#bilan">
-     Bilan
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#inegalites-d-heisenberg">
-   Inégalités d’Heisenberg
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#enonce">
-     Enoncé
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#interpretation-de-la-diffraction">
-     Interprétation de la diffraction
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#ordre-de-grandeur">
-     Ordre de grandeur
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#contraintes-sur-l-energie-minimale">
-     Contraintes sur l’énergie minimale.
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#entrainement">
-   Entrainement
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#energie-minimale-d-un-atome">
-     Energie minimale d’un atome
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#etude-de-l-oscillateur-harmonique">
-     Etude de l’oscillateur harmonique
-    </a>
-   </li>
-  </ul>
- </li>
-</ul>
+              
+              
 
-                        </nav>
-                    </div>
-                </div>
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Fonction d’onde</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
             </div>
-            <main id="main-content" role="main">
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">2.1. Fonction d’onde</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#definition">2.1.1. Définition</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fonction-d-onde-probabilite">2.1.2. Fonction d’onde - Probabilité</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#interpretation-de-l-experience-d-interference">2.1.3. Interprétation de l’expérience d’interférence</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#remarques-en-ligne">2.1.4. Remarques (en ligne)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quantification-des-etats-lies">2.2. Quantification des états liés</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#principe">2.2.1. Principe</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#methode-etude-du-puits-de-potentiel-infini">2.2.2. Méthode - Etude du puits de potentiel infini</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#etude-du-puits-de-potentiel-infini-approfondissement">2.2.3. Etude du puits de potentiel infini - Approfondissement</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bilan">2.2.4. Bilan</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#inegalites-d-heisenberg">2.3. Inégalités d’Heisenberg</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enonce">2.3.1. Enoncé</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#interpretation-de-la-diffraction">2.3.2. Interprétation de la diffraction</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ordre-de-grandeur">2.3.3. Ordre de grandeur</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contraintes-sur-l-energie-minimale">2.3.4. Contraintes sur l’énergie minimale.</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#entrainement">2.4. Entrainement</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#energie-minimale-d-un-atome">2.4.1. Energie minimale d’un atome</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#etude-de-l-oscillateur-harmonique">2.4.2. Etude de l’oscillateur harmonique</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
                 
-              <div>
-                
-  <div class="tex2jax_ignore mathjax_ignore section" id="fonction-d-onde">
-<h1>Fonction d’onde<a class="headerlink" href="#fonction-d-onde" title="Permalink to this headline">#</a></h1>
-<div class="section" id="id1">
-<h2>Fonction d’onde<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h2>
-<div class="section" id="definition">
-<h3>Définition<a class="headerlink" href="#definition" title="Permalink to this headline">#</a></h3>
-<div class="topic">
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="fonction-d-onde">
+<h1><span class="section-number">2. </span>Fonction d’onde<a class="headerlink" href="#fonction-d-onde" title="Permalink to this heading">#</a></h1>
+<section id="id1">
+<h2><span class="section-number">2.1. </span>Fonction d’onde<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
+<section id="definition">
+<h3><span class="section-number">2.1.1. </span>Définition<a class="headerlink" href="#definition" title="Permalink to this heading">#</a></h3>
+<aside class="topic">
 <p class="topic-title">Introduction</p>
 <p>La description des interférences nécessite un traitement ondulatoire (quand même!). L’idée a donc été d’associer à chaque particule une fonction dont le comportement peut être associé à celui d’une onde: on y trouvera donc <strong>possiblement</strong>  un terme de propagation et une amplitude et donc les caractéristiques d’une onde. Mais comme on va le voir, on pourra aussi avoir une interprétation de concepts corpusculaires.</p>
-</div>
-<div class="sidebar">
+</aside>
+<aside class="sidebar">
 <p class="sidebar-title">Remarque</p>
 <p>Ceci constitue un énoncé remanié du premier postulat de la mécanique quantique (en réalité, dans le formalisme de la mécanique quantique, on utilise plus des fonctions mais plus généralement des vecteurs d’état). Précisons qu’il s’agit d’un postulat. Il précise que tout l’information est contenue dans la fonction d’onde (pas de variables cachées qu’on ne connaîtrait pas encore).</p>
-</div>
+</aside>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p><strong>Fonction d’onde</strong></p>
@@ -547,9 +372,9 @@ title="Print to PDF"
 <li><p>Elle est complexe par nature.</p></li>
 </ul>
 </div>
-</div>
-<div class="section" id="fonction-d-onde-probabilite">
-<span id="proba"></span><h3>Fonction d’onde - Probabilité<a class="headerlink" href="#fonction-d-onde-probabilite" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="fonction-d-onde-probabilite">
+<span id="proba"></span><h3><span class="section-number">2.1.2. </span>Fonction d’onde - Probabilité<a class="headerlink" href="#fonction-d-onde-probabilite" title="Permalink to this heading">#</a></h3>
 <p>Nous avons dit que la fonction d’onde définissait complètement les caractéristiques d’un système. Il convient maintenant de remonter à des grandeurs qu’on peut interprêter à notre échelle. Il ne s’agit pas ici de présenter complètement la théorie quantique (qui nécessite notamment une bonne connaissance d’algèbre linéaire) mais de présenter un point particulier: la notion de probabilité de présence.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
@@ -562,7 +387,7 @@ dP = A \vert \Psi^2(M,t) \vert d \tau
 <p>où <span class="math notranslate nohighlight">\(\vert \Psi^2(M,t) \vert\)</span> est le module au carré de la fonction d’onde. <span class="math notranslate nohighlight">\(\Psi^2(M,t)\)</span> est appelée densité de probabilité de présence.</p>
 <p>A est un facteur de normalisation de sorte que la probabilité totale sur tout l’espace soit 1.</p>
 </div>
-<div class="topic">
+<aside class="topic">
 <p class="topic-title">Remarques générales</p>
 <ul class="simple">
 <li><p>il s’agit d’une probabilité de présence. Ce qui signifie que temps qu’on a pas réalisé une observation (humaine, appareil… ), on ne sait pas où se trouve la particule. Ce concept est fondamental en mécanique quantique, on n’a accès a priori qu’à des probabilités de présence. Comme on le précisera par la suite, l’observation implique la modification de cette fonction d’onde, autrement dit ” perturbe le système ” .</p></li>
@@ -570,23 +395,23 @@ dP = A \vert \Psi^2(M,t) \vert d \tau
 <li><p>La probabilité d’observer la particule dans tout l’espace est nécessairement de 1. C’est pourquoi il faut que la somme du moduel au carré sur tout l’espace soit finie (fonction de carré sommable) .</p></li>
 <li><p>Une différence fondamentale est l’absence de valeur moyenne. Il s’agit d’une probabilité de présence à un instant t. Dans le cas d’onde classique, il s’agirait de l’énergie reçue graduellement sur une ” période “.</p></li>
 </ul>
-</div>
-</div>
-<div class="section" id="interpretation-de-l-experience-d-interference">
-<h3>Interprétation de l’expérience d’interférence<a class="headerlink" href="#interpretation-de-l-experience-d-interference" title="Permalink to this headline">#</a></h3>
+</aside>
+</section>
+<section id="interpretation-de-l-experience-d-interference">
+<h3><span class="section-number">2.1.3. </span>Interprétation de l’expérience d’interférence<a class="headerlink" href="#interpretation-de-l-experience-d-interference" title="Permalink to this heading">#</a></h3>
 <div class="attention admonition">
 <p class="admonition-title">Exemple</p>
 <p>On considère le cas des interférences au moyen d’un dispositif des trous d’Young pour des électrons.</p>
 <p>Sachant qu’on peut alors appliquer un “pseudo” principe de superposition à la fonction d’onde associé à l’électron, expliquer, calcul à l’appui, pourquoi cette dernière est cohérente avec le principe d’une répartition des électrons n’étant pas la somme des faisceaux issus des deux fentes.</p>
 </div>
-</div>
-<div class="section" id="remarques-en-ligne">
-<h3>Remarques (en ligne)<a class="headerlink" href="#remarques-en-ligne" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="remarques-en-ligne">
+<h3><span class="section-number">2.1.4. </span>Remarques (en ligne)<a class="headerlink" href="#remarques-en-ligne" title="Permalink to this heading">#</a></h3>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
 <p>C’est important de ne pas confondre la fonction d’onde associé à une particule (ou plus généralement à un système) et l’amplitude complexe d’une onde classique.</p>
 </div>
-<div class="topic">
+<aside class="topic">
 <p class="topic-title">Analogie mathématique</p>
 <p>Rappelons d’abord les caractéristiques générale d’une onde:</p>
 <ul class="simple">
@@ -595,8 +420,8 @@ dP = A \vert \Psi^2(M,t) \vert d \tau
 <li><p>Pour représenter une onde sinusoïdale, on peut utiliser sa représentation complexe <span class="math notranslate nohighlight">\(A(M,t) = A(M) e^{j (\omega t - \overrightarrow{k} \cdot \overrightarrow{OM})}\)</span>. Cette représentation complexe reste une représentation mathématique permettant des calculs plus aisés (notamment pour les interférence) mais le contenu physique n’est contenu QUE dans la partie réelle de cette représentation .</p></li>
 <li><p>La superposition des ondes ne correspond pas nécessairement à un phénomène de propagation: citons en exemple les ondes stationnaires. On peut les décomposer en plusieurs ondes progressives mais la somme donne un effet où il n’y a plus de propagation de l’énergie.</p></li>
 </ul>
-</div>
-<div class="topic">
+</aside>
+<aside class="topic">
 <p class="topic-title">Différences</p>
 <p>Ces différents points peuvent être repris pour étudier mathématiquement la fonction d’onde: c’est d’ailleurs grâce à ces analogies qu’on peut décrire le caractère ondulatoire de la matière mais plusieurs nuances doivent être apportés:</p>
 <ul class="simple">
@@ -604,8 +429,8 @@ dP = A \vert \Psi^2(M,t) \vert d \tau
 <li><p>La fonction d’onde est cette fois PAR DEFINITION complexe: cela signifie qu’on ne peut se “débarrasser de la partie imaginaire” en passant au réel comme d’un artifice mathématique. Ceci est fondamental est sera précisé en deuxième année (l’équation de Schrödinger est complexe) .</p></li>
 <li><p>Si l’on peut toujours se ramener à décomposer un signal en série de Fourier, il faut noter qu’on ne peut associer une fonction purement sinusoïdale à une fonction d’onde: la probabilité de présence totale serait alors infinie.</p></li>
 </ul>
-</div>
-<div class="topic">
+</aside>
+<aside class="topic">
 <p class="topic-title">Aspects corpusculaires importants</p>
 <p>On pourrait croire à travers l’analogie entre onde classique et fonction d’onde que toute la matière n’est qu’onde. Il est important de comprendre que ce n’est pas le cas. En effet, si l’on regarde de plus près la fonction d’onde, on voit plusieurs points importants:</p>
 <ul class="simple">
@@ -614,26 +439,26 @@ dP = A \vert \Psi^2(M,t) \vert d \tau
 </ul>
 <p>Ce point est fondamental: il apparaît que l’observation a perturbé le système: son comportement après l’observation n’est plus entièrement déterminée par son état antérieur à la mesure. Comme on ne peut réaliser deux mesures simultanées (rigoureusement parlant), cela signifie que ne pourra avoir deux informations simultanée: ainsi on ne peut connaître simultanément la vitesse et la position d’une particule.</p>
 <p>On verra que ce concept s’exprime de manière quantitative grâce aux inégalités d’Heisenberg.</p>
-</div>
-</div>
-</div>
-<div class="section" id="quantification-des-etats-lies">
-<h2>Quantification des états liés<a class="headerlink" href="#quantification-des-etats-lies" title="Permalink to this headline">#</a></h2>
+</aside>
+</section>
+</section>
+<section id="quantification-des-etats-lies">
+<h2><span class="section-number">2.2. </span>Quantification des états liés<a class="headerlink" href="#quantification-des-etats-lies" title="Permalink to this heading">#</a></h2>
 <p><em>La quantification des états liés est fondamentale en mécanique quantique. Elle est une conséquence directement du caractère ondulatoire de la matière. Pour simplifier l’explication ce phénomène nous allons nous ramener à traiter la fonction d’onde comme une onde classique. Il faut néanmoins garder en mémoire toutes les précautions mise en évidence ci-dessus. C’est un point important qu’il faut comprendre associé à la notion de complémentarité. La description de tel ou tel phénomène quantique passe par le choix d’une représentation ondulatoire ou corpusculaire. Souvent dans ce choix, on ” oublie ” momentanément l’autre aspect qui existe bel et bien.</em></p>
-<div class="section" id="principe">
-<h3>Principe<a class="headerlink" href="#principe" title="Permalink to this headline">#</a></h3>
+<section id="principe">
+<h3><span class="section-number">2.2.1. </span>Principe<a class="headerlink" href="#principe" title="Permalink to this heading">#</a></h3>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p><strong>Le phénomène de quantification</strong></p>
 <p>La quantification des états de la matière correspond au caractère quantifié des états accessible, c’est-à-dire que certaines caractéristiques (énergie, moment cinétique… ) ne peuvent prendre que des valeurs discrètes.</p>
 </div>
-<div class="topic">
+<aside class="topic">
 <p class="topic-title">Exemple : Quantification des états des atomes</p>
 <p>Les expériences de spectroscopie ont montré que le spectre d’émission des atomes correspondent à des longueurs d’onde bien précises et discrètes. La relation de Planck-Einstein implique que l’énergie des photons émis et donc les écarts d’énergie entre les niveaux sont discrets: les états d’énergie d’un atome sont donc quantifiés. Ainsi les niveaux énergétiques de l’atome d’hydrogène sont données par: <span class="math notranslate nohighlight">\(E_n = -\frac{13.6}{n^2} \rm{eV}\)</span></p>
-</div>
-</div>
-<div class="section" id="methode-etude-du-puits-de-potentiel-infini">
-<h3>Méthode - Etude du puits de potentiel infini<a class="headerlink" href="#methode-etude-du-puits-de-potentiel-infini" title="Permalink to this headline">#</a></h3>
+</aside>
+</section>
+<section id="methode-etude-du-puits-de-potentiel-infini">
+<h3><span class="section-number">2.2.2. </span>Méthode - Etude du puits de potentiel infini<a class="headerlink" href="#methode-etude-du-puits-de-potentiel-infini" title="Permalink to this heading">#</a></h3>
 <div class="attention admonition">
 <p class="admonition-title">Exercice</p>
 <p>Soit un système <span class="math notranslate nohighlight">\(\Sigma\)</span> (potentiellement un électron, un atome… ) On considère un puits de potentiel infini:</p>
@@ -651,7 +476,7 @@ E_p(x &lt; 0 OU x &gt; L) = \infty
 \Psi(x,t) = e^{- \frac{i}{h} E t} \phi(x)
 \]</div>
 <p>où <span class="math notranslate nohighlight">\(E\)</span> est l’énergie de l’état du système considéré et <span class="math notranslate nohighlight">\(\phi\)</span> est une fonction sinusoïdale <span class="math notranslate nohighlight">\(\phi(x) = A \sin (\frac{2 \pi}{\lambda} x + \alpha)\)</span>.</p>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p>Calculer la densité de probabilité de présence d’un état stationnaire si <span class="math notranslate nohighlight">\(\phi(x)\)</span> est réelle. Trouver une explication au terme “stationnaire” .</p></li>
 <li><p>Donner un possible sens (sans justification) à <span class="math notranslate nohighlight">\(\lambda\)</span> .</p></li>
 <li><p>Montrer qu’avec les conditions aux limites imposées, <span class="math notranslate nohighlight">\(\lambda\)</span> ne peut prendre que des valeurs discrètes qu’on notera <span class="math notranslate nohighlight">\(\lambda_n\)</span>1. Exprimer l’énergie <span class="math notranslate nohighlight">\(E_n\)</span> d’un état associé à <span class="math notranslate nohighlight">\(\lambda_n\)</span>. Conclure quant à la quantification des états d’énergie .</p></li>
@@ -669,13 +494,13 @@ E_p(x &lt; 0 OU x &gt; L) = \infty
 <li><p>Le fait que l’énergie minimale du système ne correspond plus à l’énergie potentielle minimale .</p></li>
 <li><p>Le fait qu’au grand nombre quantique (n grand), les états quantifiés sont <strong>relativement</strong>  proches de sorte qu’on puissent parler d’un continuum.</p></li>
 </ul>
-<div class="figure align-center" id="fig-314">
+<figure class="align-center" id="fig-314">
 <img alt="../_images/puits_stationnaire.gif" src="../_images/puits_stationnaire.gif" />
+</figure>
 </div>
-</div>
-</div>
-<div class="section" id="etude-du-puits-de-potentiel-infini-approfondissement">
-<h3>Etude du puits de potentiel infini - Approfondissement<a class="headerlink" href="#etude-du-puits-de-potentiel-infini-approfondissement" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="etude-du-puits-de-potentiel-infini-approfondissement">
+<h3><span class="section-number">2.2.3. </span>Etude du puits de potentiel infini - Approfondissement<a class="headerlink" href="#etude-du-puits-de-potentiel-infini-approfondissement" title="Permalink to this heading">#</a></h3>
 <div class="attention admonition">
 <p class="admonition-title">Exercice</p>
 <p>Soit un système <span class="math notranslate nohighlight">\(\Sigma\)</span> (potentiellement un électron, un atome… ) On considère un puits de potentiel infini:</p>
@@ -699,7 +524,7 @@ E_n &amp;= n^2 \frac{h^2}{8mL^2}
 \end{align*}\]</div>
 <p>On se propose de calculer quelques ordre de grandeurs et d’interprétation le passage du quantique au classique.</p>
 <p>On considère une balle (tennis par exemple) glissant sans frottements dans une pièce. Les rebonds sur les murs sont supposés élastiques de sorte que l’allure du potentiel proposés en préambule puisse être considéré comme acceptable.</p>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p>Estimer l’énergie minimale de balle dans une approche quantique puis la vitesse minimale associée. La distinction entre énergie potentielle minimale et énergie minimale dans ce cadre a-t-elle encore un sens?1. En considérant une vitesse acceptable pour une balle de tennis et une incertitude acceptable sur cette vitesse, justifier qu’on puisse considérer que l’état de la balle n’est pas un état stationnaire mais une superposition d’état stationnaire dont on déterminera approximativement le nombre quantique moyen <span class="math notranslate nohighlight">\(n_{moy}\)</span> (à commenter) et l’intervalle <span class="math notranslate nohighlight">\(\Delta n\)</span> d’états autour de <span class="math notranslate nohighlight">\(n_{moy}\)</span> qui se superposent.</p></li>
 <li><p>Observer la vidéo ci-après correspondant à une simulation d’un puits de potentiel infini avec un système dont la fonction d’onde est une superposition d’état quantique stationnaires (on a pris des états entre <span class="math notranslate nohighlight">\(n_{moy} - \Delta n\)</span> et <span class="math notranslate nohighlight">\(n_{moy} + \Delta n\)</span> et on a sommé les fonctions d’onde). Commenter l’allure obtenue de la probabilité de présence .</p></li>
 <li><p>Observer les deux vidéos de comparaison de densité de probabilité de présence et commenter ce qu’on obtient on commentera notamment ce qu’on obtiendrait avec la balle de tennis.</p></li>
@@ -735,9 +560,9 @@ E_n &amp;= n^2 \frac{h^2}{8mL^2}
 <li><p>que les nombres quantiques mis en jeu et le nombre d’états superposés dans le cas de système macroscopique serait gigantesque. Si la modélisation même du système est discutable, cette étude montre que les interprétations quantiques ne sont pas complètement incohérentes avec la vision classique qu’on retrouve aux aux nombres quantiques: continuum, localisation de la particule.</p></li>
 </ul>
 </div>
-</div>
-<div class="section" id="bilan">
-<h3>Bilan<a class="headerlink" href="#bilan" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="bilan">
+<h3><span class="section-number">2.2.4. </span>Bilan<a class="headerlink" href="#bilan" title="Permalink to this heading">#</a></h3>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p><strong>Généralisation (admise)</strong></p>
@@ -747,10 +572,10 @@ E_n &amp;= n^2 \frac{h^2}{8mL^2}
 <p class="admonition-title">Attention</p>
 <p>Nous parlons ici uniquement des états liés. Les états de diffusion  n’impose pas de condition de quantification.</p>
 </div>
-<div class="topic">
+<aside class="topic">
 <p class="topic-title">Exemple : Cas des atomes</p>
 <p>Dans les atomes, les électrons sont soumis à un potentiel attracteur newtonien <span class="math notranslate nohighlight">\(E_p = -\frac{K}{r}\)</span> avec K&gt;0 (attraction du noyau). Il vient pour des états d’énergie tels que <span class="math notranslate nohighlight">\(E &lt; 0\)</span>, nous sommes dans des états liés: ce sont les états stables du noyau (une énergie plus forte revient à ioniser l’atome). La propriété précédente explique la quantification des atomes.</p>
-</div>
+</aside>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p><strong>Exemple : Cas de l’oscillateur harmonique</strong></p>
@@ -766,16 +591,16 @@ E_n = \hbar \omega_0 (n + \frac{1}{2})
 \]</div>
 <p>On observe que l’état fondamental (de plus basse énergie) n’est PAS (comme pour le puits quantique) l’énergie nulle (qui correspondrait à un état d’équilibre). C’est un point fondamental qu’on pourra associer par la suite aux inégalités d’Heisenberg.</p>
 </div>
-</div>
-</div>
-<div class="section" id="inegalites-d-heisenberg">
-<h2>Inégalités d’Heisenberg<a class="headerlink" href="#inegalites-d-heisenberg" title="Permalink to this headline">#</a></h2>
-<div class="section" id="enonce">
-<h3>Enoncé<a class="headerlink" href="#enonce" title="Permalink to this headline">#</a></h3>
-<div class="margin sidebar">
+</section>
+</section>
+<section id="inegalites-d-heisenberg">
+<h2><span class="section-number">2.3. </span>Inégalités d’Heisenberg<a class="headerlink" href="#inegalites-d-heisenberg" title="Permalink to this heading">#</a></h2>
+<section id="enonce">
+<h3><span class="section-number">2.3.1. </span>Enoncé<a class="headerlink" href="#enonce" title="Permalink to this heading">#</a></h3>
+<aside class="margin sidebar">
 <p class="sidebar-title"></p>
 <p>Le principe d’incertitude relie position et quantitié de mouvement suivant un axe particulier. Il y a la même relation entre <span class="math notranslate nohighlight">\(y\)</span> et <span class="math notranslate nohighlight">\(p_y\)</span> par exemple. Par contre, il n’y a pas de contrainte entre l’indétermination sur <span class="math notranslate nohighlight">\(x\)</span> et sur <span class="math notranslate nohighlight">\(p_y\)</span>.</p>
-</div>
+</aside>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p><strong>Enoncé</strong></p>
@@ -783,7 +608,7 @@ E_n = \hbar \omega_0 (n + \frac{1}{2})
 <p>\begin{align*}
 \Delta p_x \Delta x \geq \frac{\hbar}{2}</p>
 </div>
-<div class="topic">
+<aside class="topic">
 <p class="topic-title">Interprétation</p>
 <p>Comment intérprêter ce principe? Remarquons trois points:</p>
 <ul class="simple">
@@ -793,12 +618,12 @@ E_n = \hbar \omega_0 (n + \frac{1}{2})
 </ul>
 <p>Ces trois soulignent la différence fondamentale d’approche entre la mécanique classique et la mécanique quantique. Les deux derniers nous montrer que l’on doit renoncer au concept classique de trajectoire d’une particule car cela impliquerait de connaître l’état du système à chaque instant: <strong>on doit admettre que la connaissance d’au moins une grandeur vitesse ou position (voire les deux) est partiellement indéterminée.</strong>  Cela revient à dire que les aspects corpusculaire (associés à la position) et ondulatoire (associés à l’impulsion par la relation de de Broglie), s’ils sont complémentaire et indispensable ne peuvent être observés simultanément. Ce principe est mis en avant par les inégalités d’Heisenberg.</p>
 <p>Ce principe signifie qu’on ne rendre ce produit arbitrairement petit: il est impossible de définir à la fois la position et l’impulsion avec une précision arbitraire. Les inégalités d’Heisenberg concerne des grandeurs qu’on dit conjuguées (on ne définira pas précisément ce terme ici).</p>
-</div>
-<div class="topic">
+</aside>
+<aside class="topic">
 <p class="topic-title">Indétermination et incertitude</p>
 <p>La notion d’indétermination est souvent rapprochée de la notion d’incertitude d’un point de vue expérimental (on parle d’ailleurs de principe d’incertitude et souvent dans nos estimations on assimilera l’indétermination à l’incertitude minimale possible) MAIS ATTENTION, ce n’est qu’une façon simplifiée de voir les choses car ce principe n’est pas simplement rattaché à l’expérience, il est beaucoup plus fondamental. D’une manière générale, il faut comprendre que la position comme la vitesse sont des observables reliées à la fonction d’onde (exemple: l’observation de la position est reliée la densité de probabilité). La fonction d’onde fluctue dans l’espace. On peut lui associer un écart-type qui quantifie ces fluctuations. Ces fluctuations sont intrinsèques au système et non reliées au principe de mesure.</p>
-</div>
-<div class="topic">
+</aside>
+<aside class="topic">
 <p class="topic-title">Compléments : Cas de l’énergie</p>
 <p>De la même manière que impulsion et position sont conjuguées, l’énergie et le temps sont aussi soumis à une inégalité:</p>
 <div class="math notranslate nohighlight">
@@ -806,14 +631,14 @@ E_n = \hbar \omega_0 (n + \frac{1}{2})
 \Delta t \Delta E \geq \frac{\hbar}{2}
 \]</div>
 <p>Cette inégalité est fondamental mais d’une tournure différente car le temps n’est pas soumis aux fluctuations quantiques et quantification. Ici <span class="math notranslate nohighlight">\(\Delta t\)</span> correspond un temps caractéristique de l’évolution notoire (d’un point de vue énergétique) du système. Elle est par exemple utilisée pour expliquer simplement la largeur de raie d’un atome.</p>
-</div>
-</div>
-<div class="section" id="interpretation-de-la-diffraction">
-<h3>Interprétation de la diffraction<a class="headerlink" href="#interpretation-de-la-diffraction" title="Permalink to this headline">#</a></h3>
+</aside>
+</section>
+<section id="interpretation-de-la-diffraction">
+<h3><span class="section-number">2.3.2. </span>Interprétation de la diffraction<a class="headerlink" href="#interpretation-de-la-diffraction" title="Permalink to this heading">#</a></h3>
 <div class="attention admonition">
 <p class="admonition-title">Exercice</p>
 <p>On considère un faisceau de particules matérielles de longueur d’onde <span class="math notranslate nohighlight">\(\lambda\)</span> se propageant dans la direction Ox. On place un écran percé d’un trou de largeur a de manière à réduire la taille du faisceau.</p>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p>Rappeler ce qu’il va se passer si l’on réduite trop la taille du trou .</p></li>
 <li><p>Estimer dans ces condition une indétermination sur la position transverse <span class="math notranslate nohighlight">\(z\)</span> de la particule .</p></li>
 <li><p>En déduire une indétermination minimale sur la quantité de mouvement <span class="math notranslate nohighlight">\(p_z\)</span> .</p></li>
@@ -825,24 +650,24 @@ E_n = \hbar \omega_0 (n + \frac{1}{2})
 <p><strong>A retenir</strong></p>
 <p>On retiendra que les inégalités d’Heisenberg permettent d’expliquer simplement plusieurs effets quantiques. Mais attention, <strong>il ne s’agit QUE d’estimation d’ordre de grandeur car ce ne sont pas de vrais calculs des indétermination.</strong></p>
 </div>
-</div>
-<div class="section" id="ordre-de-grandeur">
-<h3>Ordre de grandeur<a class="headerlink" href="#ordre-de-grandeur" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="ordre-de-grandeur">
+<h3><span class="section-number">2.3.3. </span>Ordre de grandeur<a class="headerlink" href="#ordre-de-grandeur" title="Permalink to this heading">#</a></h3>
 <div class="attention admonition">
 <p class="admonition-title">Exercice</p>
 <p>Il est important de savoir estimer si les inégalités d’Heisenberg sont contraignantes ou non pour l’étude de tel ou tel système. Si elles sont contraignantes, cela signifie que la mécanique classique est sûrement mise en défaut.</p>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p>Pour une balle de Tennis (<span class="math notranslate nohighlight">\(m = 60 \rm{g}\)</span>) frappée à <span class="math notranslate nohighlight">\(100 \rm{km.h^{-1}}\)</span>. Estimer l’indétermination minimale sur la position de la balle si l’on peut mesurer sa vitesse à <span class="math notranslate nohighlight">\(0.1 \rm{km.h^{-1}}\)</span>. Le principe d’indétermination a-il une influence a priori sur l’étude du mouvement d’une balle de Tennis?</p></li>
 <li><p>Pour un électron orbitant autour d’un atome estimer l’indétermination sur la position <span class="math notranslate nohighlight">\(\Delta x\)</span>. En déduire l’indétermination sur la vitesse <span class="math notranslate nohighlight">\(v_x\)</span>. Commenter.</p></li>
 </ol>
 </div>
-</div>
-<div class="section" id="contraintes-sur-l-energie-minimale">
-<h3>Contraintes sur l’énergie minimale.<a class="headerlink" href="#contraintes-sur-l-energie-minimale" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="contraintes-sur-l-energie-minimale">
+<h3><span class="section-number">2.3.4. </span>Contraintes sur l’énergie minimale.<a class="headerlink" href="#contraintes-sur-l-energie-minimale" title="Permalink to this heading">#</a></h3>
 <div class="attention admonition">
 <p class="admonition-title">Exercice</p>
 <p>Le principe d’indétermination permet aussi d’expliquer pour l’énergie minimale d’un système ne petu être égale au minimum d’énergie contrairement au cas classique.</p>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p>Généralités: On considère un système mécanique possédant une position d’équilibre stable, donc un minimum d’énergie potentielle. Si le système est dans cet état, que peut-on dire de l’indétermination sur la position? En déduire l’indétermination minimale sur la quantité de mouvement. Commenter.</p></li>
 </ol>
 <p>Cas de l’oscillateur harmonique. On reprendre le cas de l’oscillateur harmonique. On rappelle que les états stationnaires sont quantifiés et que:</p>
@@ -850,7 +675,7 @@ E_n = \hbar \omega_0 (n + \frac{1}{2})
 \[
 E_n = \hbar \omega_0 (n + \frac{1}{2})
 \]</div>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p>En considérant le mouvement d’un oscillateur d’un point de vue classique, justifier que l’énergie mécanique du système puisse s’écrire sous la forme: <span class="math notranslate nohighlight">\(E = \frac{p_{x,m}^2}{4m} + \frac{k x_m^2}{4}\)</span> où <span class="math notranslate nohighlight">\(p_m\)</span> et <span class="math notranslate nohighlight">\(x_m\)</span> sont respectivement les amplitudes d’oscillations des grandeurs respectives <span class="math notranslate nohighlight">\(p_x\)</span> et<span class="math notranslate nohighlight">\(x\)</span> .</p></li>
 <li><p>En considérant le mouvement de l’oscillateur, proposer une relation simple entre <span class="math notranslate nohighlight">\(p_{x,m}\)</span> et l’indétermination <span class="math notranslate nohighlight">\(\Delta p_x\)</span> et de même entre <span class="math notranslate nohighlight">\(x_m\)</span> et l’indétermination <span class="math notranslate nohighlight">\(\Delta x\)</span></p></li>
 <li><p>En utilisant les relations de Heisenberg, montrer que l’énergie mécanique possède un minorant qui est une fonction de <span class="math notranslate nohighlight">\(E_{\min}(\Delta x)\)</span> .</p></li>
@@ -861,15 +686,15 @@ E_n = \hbar \omega_0 (n + \frac{1}{2})
 <p class="admonition-title">Attention</p>
 <p>Cette méthode de raisonnement est à savoir faire sur d’autres systèmes mais attention, il s’agit d’une étude en ordre de grandeur et le résultat trouvé à la fin ne pourrait être utilisé en tant que valeur minimale précise.</p>
 </div>
-</div>
-</div>
-<div class="section" id="entrainement">
-<h2>Entrainement<a class="headerlink" href="#entrainement" title="Permalink to this headline">#</a></h2>
-<div class="section" id="energie-minimale-d-un-atome">
-<h3>Energie minimale d’un atome<a class="headerlink" href="#energie-minimale-d-un-atome" title="Permalink to this headline">#</a></h3>
+</section>
+</section>
+<section id="entrainement">
+<h2><span class="section-number">2.4. </span>Entrainement<a class="headerlink" href="#entrainement" title="Permalink to this heading">#</a></h2>
+<section id="energie-minimale-d-un-atome">
+<h3><span class="section-number">2.4.1. </span>Energie minimale d’un atome<a class="headerlink" href="#energie-minimale-d-un-atome" title="Permalink to this heading">#</a></h3>
 <div class="attention admonition">
 <p class="admonition-title">Exercice</p>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p>On considère le mouvement des électrons comme des orbites circulaires de rayons R autour du noyau. Utiliser les inégalités Heisenberg pour justifier l’existence d’une orbite de rayon minimal* Toujours sous l’hypothèse d’un mouvement circulaire, montrer que l’hypothèse de la quantification du moment cinétique <span class="math notranslate nohighlight">\(\overrightarrow{L} = n \hbar \overrightarrow{e_z} \)</span> conduit à montrer la quantification de l’énergie de l’atome. On précisera l’expression des niveaux d’énergie.</p></li>
 </ol>
 </div>
@@ -879,35 +704,35 @@ E_n = \hbar \omega_0 (n + \frac{1}{2})
 <li><p><em><span class="math notranslate nohighlight">\(\Longrightarrow\)</span> Energie mécanique.</em></p></li>
 <li><p><em><span class="math notranslate nohighlight">\(\Longrightarrow\)</span> Moment cinétique.</em></p></li>
 </ul>
-</div>
-<div class="section" id="etude-de-l-oscillateur-harmonique">
-<h3>Etude de l’oscillateur harmonique<a class="headerlink" href="#etude-de-l-oscillateur-harmonique" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="etude-de-l-oscillateur-harmonique">
+<h3><span class="section-number">2.4.2. </span>Etude de l’oscillateur harmonique<a class="headerlink" href="#etude-de-l-oscillateur-harmonique" title="Permalink to this heading">#</a></h3>
 <div class="attention admonition">
 <p class="admonition-title">Exercice</p>
 <p>On se propose d’aller plus loin dans l’étude de l’oscillateur harmonique.</p>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p>On considère un pendule simple macroscopique utilisable en salle de TP. Estimer au moyen des formules du cours l’énergie de l’état fondamdental <span class="math notranslate nohighlight">\(n=1\)</span>. Déterminer l’amplitude des oscillations associées. Est-il raisonnable de le distinguer de l’état <span class="math notranslate nohighlight">\(E_{p,min} = 0\)</span>?* Estimer pour le même pendule l’écart entre deux niveau d’énergie et lui associer l’écart entre deux l’amplitude d’oscillation des deux états. Peut-on parler de continuum?</p></li>
 </ol>
 <p>On s’intéresse maintenant à un oscillateur quelconque (possiblement microscopique) et à la fonction d’onde.</p>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p>Observer l’animation ci-après et commenter brièvement la densité de probabilité en fonction du nombre quantique. On s’intéressera notamment à interprêter les variations aux nombres quantiques ainsi que l’annulation de la densité de probabilité en certains points .</p></li>
 <li><p>On considère le modèle classique d’un oscillateur harmonique possédant une énergie mécanique <span class="math notranslate nohighlight">\(E\)</span>. Rappeler l’expression de <span class="math notranslate nohighlight">\(v(t)\)</span> .</p></li>
 <li><p>L’oscillateur est dans le noir est on prend aléatoirement une photo (avec flash) du montage pour situer le mobile. Expliquer, grâce à <span class="math notranslate nohighlight">\(v(t)\)</span> si la probabilité de présence de l’oscillateur sur la photo serra plus plus grande au centre ou sur les côtés .</p></li>
 <li><p>On s’intéresse maintenant à l’oscillateur quantique. Comparer la probabilité de présence pour <span class="math notranslate nohighlight">\(n=1\)</span> avec le cas classique .</p></li>
 <li><p>Faire la même comparaison pour un grand nombre quantique. Commenter.</p></li>
 </ol>
-<div class="figure align-center" id="fig-315">
+<figure class="align-center" id="fig-315">
 <img alt="../_images/ohq_stationnaire.gif" src="../_images/ohq_stationnaire.gif" />
-</div>
+</figure>
 </div>
 <p><em>Point utile pour cet exercice</em></p>
 <ul class="simple">
 <li><p><em><span class="math notranslate nohighlight">\(\Longrightarrow\)</span> Energie mécanique.</em></p></li>
 <li><p><em><span class="math notranslate nohighlight">\(\Longrightarrow\)</span> Oscillateur harmonique classique.</em></p></li>
 </ul>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -921,7 +746,7 @@ E_n = \hbar \omega_0 (n + \frac{1}{2})
             mode: "python"
         },
         kernelOptions: {
-            kernelName: "python3",
+            name: "python3",
             path: "./notebook"
         },
         predefinedOutput: true
@@ -929,43 +754,117 @@ E_n = \hbar \omega_0 (n + \frac{1}{2})
     </script>
     <script>kernelName = 'python3'</script>
 
-              </div>
+                </article>
               
-            </main>
-            <footer class="footer-article noprint">
-                
-    <!-- Previous / next buttons -->
-<div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="dualite.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Dualité onde-corpuscule</p>
-        </div>
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="dualite.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">1. </span>Dualité onde-corpuscule</p>
+      </div>
     </a>
 </div>
-            </footer>
-        </div>
-    </div>
-    <div class="footer-content row">
-        <footer class="col footer"><p>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">2.1. Fonction d’onde</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#definition">2.1.1. Définition</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fonction-d-onde-probabilite">2.1.2. Fonction d’onde - Probabilité</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#interpretation-de-l-experience-d-interference">2.1.3. Interprétation de l’expérience d’interférence</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#remarques-en-ligne">2.1.4. Remarques (en ligne)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quantification-des-etats-lies">2.2. Quantification des états liés</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#principe">2.2.1. Principe</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#methode-etude-du-puits-de-potentiel-infini">2.2.2. Méthode - Etude du puits de potentiel infini</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#etude-du-puits-de-potentiel-infini-approfondissement">2.2.3. Etude du puits de potentiel infini - Approfondissement</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bilan">2.2.4. Bilan</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#inegalites-d-heisenberg">2.3. Inégalités d’Heisenberg</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enonce">2.3.1. Enoncé</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#interpretation-de-la-diffraction">2.3.2. Interprétation de la diffraction</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ordre-de-grandeur">2.3.3. Ordre de grandeur</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contraintes-sur-l-energie-minimale">2.3.4. Contraintes sur l’énergie minimale.</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#entrainement">2.4. Entrainement</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#energie-minimale-d-un-atome">2.4.1. Energie minimale d’un atome</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#etude-de-l-oscillateur-harmonique">2.4.2. Etude de l’oscillateur harmonique</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
   
-    By C. Lacpatia<br/>
-  
-      &copy; Copyright 2021.<br/>
-</p>
-        </footer>
-    </div>
+  <div class="footer-item">
     
+<p class="component-author">
+By C. Lacpatia
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2021.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
 </div>
+          </footer>
+        
 
-
-      </div>
+      </main>
     </div>
+  </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
 
-
+  <footer class="bd-footer">
+  </footer>
   </body>
 </html>
